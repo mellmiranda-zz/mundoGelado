@@ -1,0 +1,3 @@
+@function adapta-tamanho($multiplicador){
+    @return $multiplicador * $font-size;
+}

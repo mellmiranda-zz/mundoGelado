@@ -1,0 +1,31 @@
+// Variáveis
+$cor-primaria: lighten(#829dad, 0%);
+$cor-branca: #fff;
+
+$cores: (
+    primaria: lighten(#829dad, 0%),
+    auxiliar: #000,
+    branco: #fff,
+);
+
+@each $nome-da-cor, $cor in $cores{
+    .#{$nome-da-cor}{
+        color: $cor;
+    }
+}
+
+$fontes: (
+    principal: 'Nunito',
+    auxiliar: 'Arial, sans serif',
+    base: 'Montserrat'
+);
+
+@each $nome-da-fonte, $fonte in $fontes{
+    .#{$nome-da-fonte}{
+        font-family: $fonte;0
+    }
+}
+
+
+$font-size: 10px;
+
